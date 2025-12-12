@@ -23,7 +23,7 @@ const FinedgeHero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center">
 
         {/* Left Side: Text & Buttons */}
-        <div className="w-full lg:w-1/2 text-white mb-12 lg:mb-0 pl-40">
+        <div className="w-full lg:w-1/2 text-white mb-12 lg:mb-0 lg:pl-40">
           <h1 className="text-[32px] font-semibold">
             Ready to try out our <br />
             <span className="text-white">Finedge 2.0?</span>

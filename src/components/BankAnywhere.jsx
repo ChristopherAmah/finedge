@@ -7,7 +7,7 @@ import internet_banking_cards from '../assets/bank2.png'; // <-- New image file 
 const FinEdgeHero = () => {
   return (
     // Use a fragment or a main div for the entire page content
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white py-8">
       
       {/* --- Main Header Section (Copied from your original code) --- */}
       <div className="py-10 px-4 sm:px-6 lg:px-28"> 
