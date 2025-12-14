@@ -20,7 +20,7 @@ const FinedgeCoreBanking = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* --- MAIN HEADING + DESCRIPTION --- */}
-        <div className="mb-16 max-w-3xl">
+        <div className="mb-16 max-w-3xl" id='core-banking'>
           <h1 className="text-4xl sm:text-[54px] font-semibold text-[#121212] leading-tight mb-3">
             Finedge <br />
             Core Banking
@@ -57,9 +57,11 @@ const FinedgeCoreBanking = () => {
               />
             </div>
 
-            <button className="mt-14 px-5 py-2.5 rounded-full text-white text-[17px] font-medium bg-[#3A358C] hover:bg-indigo-800 transition duration-300">
+            <a href="mailto:info@thefifthlab.com">
+              <button className="mt-14 px-5 py-2.5 rounded-full text-white text-[17px] font-medium bg-[#3A358C] hover:bg-indigo-800 transition duration-300">
               Schedule A Demo
             </button>
+            </a>
           </div>
 
           {/* RIGHT: IMAGE */}

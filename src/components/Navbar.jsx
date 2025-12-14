@@ -16,8 +16,8 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-6 text-[#7C7C7C] text-[16px]">
-          <a href="#" className="hover:text-blue-600 transition">Core Banking</a>
-          <a href="#" className="hover:text-blue-600 transition">Online Banking</a>
+          <a href="#core-banking" className="hover:text-blue-600 transition">Core Banking</a>
+          <a href="#online-banking" className="hover:text-blue-600 transition">Online Banking</a>
         </div>
 
         {/* Get Started Button */}
@@ -38,8 +38,8 @@ const Navbar = () => {
         {open && (
           <div className="absolute top-[70px] left-0 w-full bg-[#ECEBF4] rounded-2xl shadow-lg py-4 px-6 lg:hidden flex flex-col space-y-4 text-[#7C7C7C] text-[16px] z-20">
 
-            <a href="#" className="hover:text-blue-600 transition">Core Banking</a>
-            <a href="#" className="hover:text-blue-600 transition">Online Banking</a>
+            <a href="#core-banking" className="hover:text-blue-600 transition">Core Banking</a>
+            <a href="#online-banking" className="hover:text-blue-600 transition">Online Banking</a>
 
             {/* Mobile Get Started Button */}
             <button className="flex items-center justify-center space-x-1 bg-[#3A358C] text-white text-md font-medium py-2.5 px-5 rounded-full hover:bg-indigo-800 transition duration-300">

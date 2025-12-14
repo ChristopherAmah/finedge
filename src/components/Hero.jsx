@@ -6,38 +6,40 @@ import herophone from '../assets/herophone.png';
 
 const Hero = () => {
   return (
-    <section className="text-center pb-0 relative">
+    <section className="text-center pb-0 relative px-4 sm:px-6 lg:px-28">
       
       {/* Headline */}
-      <h1 className="text-5xl md:text-[64px] font-bold text-[#121212] leading-tight mb-4 max-w-5xl mx-auto">
+      <h1 className="text-4xl sm:text-5xl md:text-[64px] font-bold font-sans text-[#121212] leading-tight mb-4 max-w-3xl sm:max-w-5xl mx-auto">
         Integrated <br />banking & payment automation <br />solution
       </h1>
 
       {/* Description */}
-      <p className="text-[20px] text-[#7C7C7C] mb-5 max-w-4xl mx-auto">
+      <p className="text-[16px] sm:text-[20px] text-[#7C7C7C] mb-5 max-w-md sm:max-w-4xl mx-auto">
         FinEdge brings your core operations, digital channels, and payment services
         into one powerful platform. Faster deployment, easier management,
         and a product built for African financial institutions.
       </p>
 
       {/* Buttons */}
-      <div className="flex justify-center space-x-2 mb-6">
-        <button className="bg-[#3A358C] hover:bg-indigo-700 text-white text-md font-medium py-2.5 px-5 rounded-full transition">
-          Request a Demo
-        </button>
-        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium py-2.5 px-5 rounded-full transition">
+      <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-2 mb-6">
+        <a href="mailto:info@thefifthlab.com">
+          <button className="bg-[#3A358C] hover:bg-indigo-700 text-white text-md font-medium py-2.5 px-5 rounded-full transition w-full sm:w-auto">
+            Request a Demo
+          </button>
+        </a>
+        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium py-2.5 px-5 rounded-full transition justify-center items-center w-full sm:w-auto">
           Get Started <MdArrowOutward size={18} className="ml-2 mt-1" />
         </button>
       </div>
 
       {/* Trusted */}
-      <div className="flex justify-center items-center space-x-2 text-sm text-[#7C7C7C] mb-2">
-        <img src={arm} alt="ARM" className="w-20" />
+      <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
+        <img src={arm} alt="ARM" className="w-16 sm:w-20" />
         <span>Trusted by 20+ Finance Institutions.</span>
       </div>
 
       {/* IMAGES SECTION */}
-      <div className="relative w-full flex justify-center pb-0 mt-2">
+      <div className="relative w-full flex justify-center pb-0 mt-6">
 
         {/* === PHONE === */}
         <img
@@ -49,27 +51,30 @@ const Hero = () => {
             -rotate-24
             drop-shadow-2xl
             rounded-xl
-
-            /* Desktop — keep your exact layout */
+            top-[-70px]
+            left-[5%]
+            w-[140px]
+            sm:top-[-90px]
+            sm:left-[8%]
+            sm:w-[220px]
             md:-top-[100px]
             md:left-[12%]
             md:w-[360px]
-
-            /* Mobile/tablet responsive fixes */
-            top-[-90px]
-            left-[5%]
-            w-[180px]
+            lg:-top-[120px]
+            lg:left-[10%]
+            lg:w-[360px]
           "
         />
 
-        {/* === PC (Half visible) === */}
-        <div className="relative w-full flex justify-center overflow-hidden h-[220px] md:h-[300px] z-10">
+        {/* === PC === */}
+        <div className="relative w-full flex justify-center overflow-hidden h-[220px] sm:h-[280px] md:h-[300px] z-10">
           <img
             src={heropc}
             alt="PC Mockup"
-            className="w-full object-cover"
+            className="w-full object-cover max-w-full"
             style={{
-              height: "650px",
+              height: "500 px",
+              maxHeight: "650px",
             }}
           />
         </div>
