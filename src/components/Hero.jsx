@@ -21,7 +21,7 @@ const Hero = () => {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-2 mb-6">
+      <div className="flex flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-2 mb-6">
         <a href="mailto:info@thefifthlab.com">
           <button className="bg-[#3A358C] hover:bg-indigo-700 text-white text-md font-medium py-2.5 px-5 rounded-full transition w-full sm:w-auto">
             Request a Demo
@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       {/* Trusted */}
-      <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
+      <div className="flex flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
         <img src={arm} alt="ARM" className="w-16 sm:w-20" />
         <span>Trusted by 20+ Finance Institutions.</span>
       </div>
@@ -41,25 +41,19 @@ const Hero = () => {
       {/* IMAGES SECTION */}
       <div className="relative w-full flex justify-center pb-0 mt-6">
 
-        {/* === PHONE === */}
+        {/* === PHONE (hidden on mobile) === */}
         <img
           src={herophone}
           alt="Phone"
-          className="
+          className="hidden md:block
             absolute
             z-0
             -rotate-24
             drop-shadow-2xl
             rounded-xl
-            top-[-70px]
-            left-[5%]
-            w-[140px]
-            sm:top-[-90px]
-            sm:left-[8%]
-            sm:w-[220px]
-            md:-top-[100px]
-            md:left-[12%]
-            md:w-[360px]
+            top-[-100px]
+            left-[12%]
+            w-[360px]
             lg:-top-[120px]
             lg:left-[10%]
             lg:w-[360px]
@@ -67,14 +61,14 @@ const Hero = () => {
         />
 
         {/* === PC === */}
-        <div className="relative w-full flex justify-center overflow-hidden h-[220px] sm:h-[280px] md:h-[300px] z-10">
+        <div className="relative w-full flex justify-center overflow-hidden h-[300px] sm:h-[350px] md:h-[300px] lg:h-[300px] z-10">
           <img
             src={heropc}
             alt="PC Mockup"
             className="w-full object-cover max-w-full"
             style={{
-              height: "500 px",
-              maxHeight: "650px",
+              minHeight: "550px",
+              maxHeight: "500px",
             }}
           />
         </div>
