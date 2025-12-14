@@ -21,25 +21,30 @@ const Hero = () => {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-2 mb-6">
-        <a href="mailto:info@thefifthlab.com">
-          <button className="bg-[#3A358C] hover:bg-indigo-700 text-white text-md font-medium py-2.5 px-5 rounded-full transition w-full sm:w-auto">
+      <div className="flex flex-row flex-wrap justify-center gap-2 mb-6">
+        <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
+          <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
+                            w-full sm:w-auto
+                            py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
             Request a Demo
           </button>
         </a>
-        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium py-2.5 px-5 rounded-full transition justify-center items-center w-full sm:w-auto">
-          Get Started <MdArrowOutward size={18} className="ml-2 mt-1" />
+        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition justify-center items-center
+                          w-full sm:w-auto
+                          py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
+          Get Started <MdArrowOutward size={16} className="ml-2 mt-0.5 sm:ml-2 sm:mt-1" />
         </button>
       </div>
 
+
       {/* Trusted */}
-      <div className="flex flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
+      <div className="flex flex-row justify-center items-center space-x-2 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
         <img src={arm} alt="ARM" className="w-16 sm:w-20" />
         <span>Trusted by 20+ Finance Institutions.</span>
       </div>
 
       {/* IMAGES SECTION */}
-      <div className="relative w-full flex justify-center pb-0 mt-6">
+      <div className="relative w-full flex justify-center pb-0 mt-6 px-4">
 
         {/* === PHONE (hidden on mobile) === */}
         <img
@@ -61,7 +66,7 @@ const Hero = () => {
         />
 
         {/* === PC === */}
-        <div className="relative w-full flex justify-center overflow-hidden h-[300px] sm:h-[350px] md:h-[300px] lg:h-[300px] z-10">
+        <div className="relative w-full flex justify-center overflow-hidden h-[300px] sm:h-[350px] md:h-[300px] lg:h-[300px] z-10 ">
           <img
             src={heropc}
             alt="PC Mockup"

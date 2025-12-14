@@ -32,7 +32,7 @@ const LogoScroll = () => {
   ];
 
   return (
-    <div className="overflow-hidden mb-20 py-10 bg-[#F5F5F5]">
+    <div className="overflow-hidden mb-20 py-3 md:py-5 bg-[#F5F5F5]">
       <div className="flex w-max gap-x-12 animate-logoScroll">
         {[...logos, ...logos].map((logo, index) => (
           <div key={index} className="flex items-center justify-center">
