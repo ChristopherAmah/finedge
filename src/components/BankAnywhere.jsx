@@ -32,7 +32,7 @@ const FinEdgeHero = () => {
 
             {/* Text + Button */}
             <div className="w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left">
-              <div className="flex flex-col justify-between h-auto lg:h-[400px] pt-4 pb-4">
+              <div className="flex flex-col pt-4 pb-4">
                 <div>
                   <p className="text-[12px] sm:text-[14px] uppercase tracking-widest text-[#7C7C7C] mb-2 sm:mb-3">
                     FINEDGE MOBILE BANKING
@@ -77,7 +77,7 @@ const FinEdgeHero = () => {
 
             {/* Text + Button */}
             <div className="w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left max-w-lg">
-              <div className="flex flex-col justify-between h-auto lg:h-[400px] pt-4 pb-4">
+              <div className="flex flex-col  pt-4 pb-4">
                 <div>
                   <p className="text-[12px] sm:text-[14px] uppercase tracking-widest text-[#7C7C7C] mb-2 sm:mb-3">
                     FINEDGE ONLINE BANKING

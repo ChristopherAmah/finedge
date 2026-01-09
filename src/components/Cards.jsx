@@ -1,4 +1,6 @@
 import React from "react";
+import loans from "../assets/loan.jpg";
+import onboarding from "../assets/onboarding.jpg";
 import customer from "../assets/customer.jpg";
 import payment from "../assets/payment.jpg";
 import digital from "../assets/digital.jpg";
@@ -8,7 +10,7 @@ const features = [
     title: "Digital Onboarding",
     description:
       "Instant account creation with KYC checks, automated workflows, and real time profile syncing across channels.",
-    img: "/images/onboarding.jpg",
+    img: onboarding,
     bg: "bg-[#F3F9ED]",
   },
   {
@@ -19,18 +21,18 @@ const features = [
     bg: "bg-[#ECEBF4]",
   },
   {
-    title: "Loans & Credits",
-    description:
-      "End to end loan setup, scoring, disbursement, repayment, and performance tracking.",
-    img: "/images/loans.jpg",
-    bg: "bg-[#EEF9F9]",
-  },
-  {
     title: "Payment & Transfers",
     description:
       "Seamless interbank transfers, internal transfers, bills, bulk payments, and automated settlement.",
     img: payment,
     bg: "bg-[#ECEBF4]",
+  },
+  {
+    title: "Loans & Credits",
+    description:
+      "End to end loan setup, scoring, disbursement, repayment, and performance tracking.",
+    img: loans,
+    bg: "bg-[#EEF9F9]",
   },
   {
     title: "Digital Channels",
@@ -43,7 +45,7 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <div className="grid md:grid-cols-3 gap-6 px-6 md:px-28 max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-3 gap-6 px-6 md:px-28 max-w-7xl mx-auto mt-20">
 
       {/* ---- ROW 1 ---- */}
       <div className="md:col-span-2 flex flex-col h-full">

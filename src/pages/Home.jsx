@@ -1,5 +1,4 @@
 import React from 'react'
-import Demo from '../components/Demo.jsx'
 import BankAnywhere from '../components/BankAnywhere.jsx'
 import CoreBankingCards from '../components/CoreBankingCards.jsx'
 import CoreBankingSection from '../components/CoreBankingSection.jsx'
@@ -16,7 +15,6 @@ const Home = () => {
       <CoreBankingSection />
       <CoreBankingCards />
       <BankAnywhere />
-      <Demo />
     </>
   )
 }

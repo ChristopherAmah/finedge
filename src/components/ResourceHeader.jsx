@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Hero from './Hero';
+import Hero from './ResourceHero';
 import topBg from '../assets/top.png';
 import bottomBg from '../assets/bottom.png';
 
 function App() {
   return (
-    <div className="relative bg-white font-sans overflow-hidden">
+    <div className="relative bg-white font-sans overflow-hidden min-h-screen">
 
       {/* ==== TOP BACKGROUND IMAGE ==== */}
       <img

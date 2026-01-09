@@ -50,7 +50,7 @@ const FeatureCard = ({
 
         {hasButton && (
           <button className="mt-6 font-medium px-4 py-2 bg-[#222222] text-white text-sm rounded-full hover:bg-gray-700 transition">
-            Get started
+            Read More
           </button>
         )}
       </>
@@ -82,7 +82,7 @@ const FeatureCard = ({
 
           {hasButton && (
             <button className="mt-6 font-medium px-4 py-2 bg-[#222222] text-white text-sm rounded-full hover:bg-gray-700 transition">
-              Get started
+              Read More
             </button>
           )}
         </div>

@@ -12,7 +12,7 @@ const FinedgeHero = () => {
       <img
         src={BackgroundShape}
         alt="Decorative background"
-        className="absolute inset-0 w-full h-full object-cover opacity-80"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Content Container */}

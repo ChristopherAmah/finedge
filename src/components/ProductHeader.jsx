@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Hero from './Hero';
+import Hero from './ProductHero';
 import topBg from '../assets/top.png';
 import bottomBg from '../assets/bottom.png';
 
