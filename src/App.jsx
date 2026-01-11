@@ -10,6 +10,9 @@ import Request from './pages/Request.jsx'
 import WhyFinedge from './pages/WhyFinedge.jsx'
 import Resources from './pages/Resources.jsx'
 import Modernize from './pages/Modernize.jsx'
+import Grow from './pages/Grow.jsx'
+import Member from './pages/Member.jsx'
+import Launch from './pages/Launch.jsx'
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="/why-finedge" element={<WhyFinedge />} />
         <Route path="/demo" element={<Request />} />
         <Route path="/solutions/modernize-banking" element={<Modernize />} />
+        <Route path="/solutions/grow" element={<Grow />} />
+        <Route path="/solutions/member" element={<Member />} />
+        <Route path="/solutions/launch" element={<Launch />} />
       </Routes>
       <Demo />
       <Footer />

@@ -46,7 +46,7 @@ const features = [
 const FeatureGrid = () => {
   return (
 
-    <section className="py-20">
+    <section className="">
       <div className="text-center">
         <h2 className="text-4xl font-medium mb-3 mx-auto max-w-xl">
           How FinEdge Solves These Challenges
@@ -56,7 +56,7 @@ const FeatureGrid = () => {
         </p>
       </div>
       
-    <div className="grid md:grid-cols-3 gap-6 px-6 md:px-28 max-w-7xl mx-auto py-15">
+    <div className="grid md:grid-cols-3 gap-3 px-6 md:px-28 max-w-7xl mx-auto py-15">
 
       {/* ---- ROW 1 ---- */}
       <div className="md:col-span-2 flex flex-col h-full">

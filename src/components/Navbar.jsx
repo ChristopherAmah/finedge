@@ -54,25 +54,25 @@ const Navbar = () => {
                 to="/solutions/modernize-banking"
                 className="block px-4 py-3 text-sm text-gray-600 hover:bg-[#F3F3F8] hover:text-[#3A358C] rounded-t-xl"
               >
-                Core Banking
+                Modernize Retail Banking at Scale
               </NavLink>
               <NavLink
-                to="/solutions/digital-banking"
+                to="/solutions/grow"
                 className="block px-4 py-3 text-sm text-gray-600 hover:bg-[#F3F3F8] hover:text-[#3A358C]"
               >
-                Digital Banking
+                Grow Your Microfinance with Confidence
               </NavLink>
               <NavLink
-                to="/solutions/payments"
+                to="/solutions/member"
                 className="block px-4 py-3 text-sm text-gray-600 hover:bg-[#F3F3F8] hover:text-[#3A358C]"
               >
-                Payments & Transfers
+                Member-First Banking Technology
               </NavLink>
               <NavLink
-                to="/solutions/analytics"
+                to="/solutions/launch"
                 className="block px-4 py-3 text-sm text-gray-600 hover:bg-[#F3F3F8] hover:text-[#3A358C] rounded-b-xl"
               >
-                Analytics & Insights
+                Launch Fast. Scale Without Limits.
               </NavLink>
             </div>
           </div>
@@ -129,15 +129,15 @@ const Navbar = () => {
 
             {solutionsOpen && (
               <div className="pl-4 flex flex-col space-y-2 text-sm">
-                <NavLink to="/solutions/modernize-banking">Core Banking</NavLink>
-                <NavLink to="/solutions/digital-banking">
-                  Digital Banking
+                <NavLink to="/solutions/modernize-banking">Modernize Retail Banking at Scale</NavLink>
+                <NavLink to="/solutions/grow">
+                  Grow Your Microfinance with Confidence
                 </NavLink>
-                <NavLink to="/solutions/payments">
-                  Payments & Transfers
+                <NavLink to="/solutions/member">
+                  Member-First Banking Technology
                 </NavLink>
-                <NavLink to="/solutions/analytics">
-                  Analytics & Insights
+                <NavLink to="/solutions/launch">
+                  Launch Fast. Scale Without Limits.
                 </NavLink>
               </div>
             )}

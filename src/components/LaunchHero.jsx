@@ -1,0 +1,54 @@
+import React from 'react';
+import { MdArrowOutward } from "react-icons/md";
+
+const Hero = () => {
+  return (
+    <section className="text-center py-12 relative px-4 sm:px-6 lg:px-28">
+      
+      {/* --- ADDED BADGE SECTION START --- */}
+      <div className="flex justify-center mb-[30px]">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F1F0FA]">
+          <span role="img" aria-label="thumbs up">👍</span>
+          <span className="text-[#3A358C] text-sm">
+            Trusted by 20+ Finance Institutions.
+          </span>
+        </div>
+      </div>
+      {/* --- ADDED BADGE SECTION END --- */}
+
+      {/* Headline */}
+      <h1 className="text-4xl sm:text-5xl md:text-[64px] font-semibold font-sans text-[#121212] mb-4 max-w-3xl sm:max-w-5xl mx-auto">
+        Launch Fast. Scale <br />Without Limits.
+      </h1>
+
+      {/* Description */}
+      <p className="text-[16px] sm:text-[21px] text-[#7C7C7C] mb-5 max-w-md sm:max-w-3xl mx-auto">
+        We enable fintech startups to quickly build, test, and scale digital financial products without technical hurdles.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex flex-row flex-wrap justify-center gap-2 mb-12">
+        <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
+          <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
+                            w-full sm:w-auto
+                            py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
+            Request a Demo
+          </button>
+        </a>
+        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition justify-center items-center
+                          w-full sm:w-auto
+                          py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
+          Get Started <MdArrowOutward size={16} className="ml-2 mt-0.5 sm:ml-2 sm:mt-1" />
+        </button>
+      </div>
+
+      {/* Trusted (Logo section) */}
+      {/* <div className="flex flex-row justify-center items-center space-x-2 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
+        <img src={arm} alt="ARM" className="w-16 sm:w-20" />
+        <span>Trusted by 20+ Finance Institutions.</span>
+      </div> */}
+    </section>
+  );
+};
+
+export default Hero;
