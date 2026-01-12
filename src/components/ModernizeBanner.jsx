@@ -1,8 +1,7 @@
 import React from "react";
-import { MoveUpRight } from "lucide-react"; // Using a similar icon to the one in the image
+import { MoveUpRight } from "lucide-react";
 import whybg from "../assets/whybg.png";
 import { PiFanFill } from "react-icons/pi";
-
 
 const KeyBenefitsSection = () => {
   const benefits = [
@@ -33,48 +32,48 @@ const KeyBenefitsSection = () => {
   ];
 
   return (
-    <section className="relative w-full py-24 px-28 overflow-hidden bg-[#3F3D8F]">
+    <section className="relative w-full py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-28 overflow-hidden bg-[#3F3D8F]">
       {/* Background Grid Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{ backgroundImage: `url(${whybg})` }}
         />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-left">
         {/* Header */}
-        <div className="mb-20">
-          <h2 className="text-white text-4xl font-medium mb-3">
+        <div className="mb-12 sm:mb-16">
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-medium mb-2 sm:mb-3">
             Key Benefits for Your Retail Bank
           </h2>
-          <p className="text-white text-[18px]">
+          <p className="text-white text-[14px] sm:text-[16px] md:text-[18px]">
             Transform your operations and deliver exceptional value to your customers
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-[#F5F5F5] p-7 rounded-2xl flex flex-col items-start text-left"
+              className="bg-[#F5F5F5] p-4 sm:p-6 md:p-7 rounded-2xl flex flex-col items-start text-left"
             >
-              <PiFanFill  className="w-6 h-6 mb-8 text-black" />
-              
-              <div className="mb-7">
-                <span className="text-[34px] font-medium text-[#3A358C] block mb-1">
+              <PiFanFill className="w-5 h-5 mb-4 sm:mb-6 md:mb-8 text-black" />
+
+              <div className="mb-4 sm:mb-5 md:mb-7">
+                <span className="text-[24px] sm:text-[28px] md:text-[34px] font-medium text-[#3A358C] block mb-1">
                   {benefit.metric}
                 </span>
-                <span className="text-[#7C7C7C] text-[16px] uppercase">
+                <span className="text-[#7C7C7C] text-[12px] sm:text-[14px] md:text-[16px] uppercase">
                   {benefit.subLabel}
                 </span>
               </div>
 
-              <h3 className="text-[#121212] font-medium text-[18px] mb-2 uppercase">
+              <h3 className="text-[#121212] font-medium text-[16px] sm:text-[18px] md:text-[18px] mb-1 sm:mb-2 md:mb-2 uppercase">
                 {benefit.title}
               </h3>
-              <p className="text-[#646464] text-[18px] max-w-xl">
+              <p className="text-[#646464] text-[14px] sm:text-[16px] md:text-[18px] max-w-full">
                 {benefit.description}
               </p>
             </div>

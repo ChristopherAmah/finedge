@@ -41,15 +41,15 @@ const FeaturesSection = () => {
       {/* Top Stats Bar */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-24">
         <div>
-          <h2 className="text-4xl font-medium text-[#000000] mb-3">Our stats</h2>
+          <h2 className="text-3xl sm:text-4xl font-medium text-[#000000] mb-3">Our stats</h2>
           <p className="text-[#7C7C7C] text-[18px]">Made for Financial Institutions</p>
         </div>
         
-        <div className="flex gap-12 mt-8 md:mt-0">
+        <div className="flex gap-6 sm:gap-12 mt-8 md:mt-0">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center md:text-left">
-              <div className="text-4xl font-medium text-[#3A358C] mb-3">{stat.value}</div>
-              <div className="text-[#7C7C7C] text-[18px]">{stat.label}</div>
+              <div className="text-2xl sm:text-4xl font-medium text-[#3A358C] mb-3">{stat.value}</div>
+              <div className="text-[#7C7C7C] text-sm sm:text-[18px]">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -57,7 +57,7 @@ const FeaturesSection = () => {
 
       {/* Heading Section */}
       <div className="mb-16">
-        <h2 className="text-4xl font-medium text-[#000000] mb-3 max-w-lg">
+        <h2 className="text-2xl sm:text-4xl font-medium text-[#000000] mb-3 max-w-lg">
           Why Leading Financial Institutions Choose FinEdge
         </h2>
         <p className="text-[#5E5E5E] text-[18px] max-w-lg">

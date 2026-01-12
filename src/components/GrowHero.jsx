@@ -27,18 +27,20 @@ const Hero = () => {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-row flex-wrap justify-center gap-2 mb-12">
-        <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
+      <div className="flex justify-center items-center gap-3 mb-12">
+        <a href="mailto:info@thefifthlab.com">
           <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
-                            w-full sm:w-auto
-                            py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
+                            px-4 py-2 text-sm
+                            sm:px-5 sm:py-2.5 sm:text-base">
             Request a Demo
           </button>
         </a>
-        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition justify-center items-center
-                          w-full sm:w-auto
-                          py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
-          Get Started <MdArrowOutward size={16} className="ml-2 mt-0.5 sm:ml-2 sm:mt-1" />
+      
+        <button className="flex items-center bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition
+                          px-4 py-2 text-sm
+                          sm:px-5 sm:py-2.5 sm:text-base">
+          Get Started
+          <MdArrowOutward size={16} className="ml-2" />
         </button>
       </div>
 

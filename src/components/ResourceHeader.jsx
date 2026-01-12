@@ -6,7 +6,7 @@ import bottomBg from '../assets/bottom.png';
 
 function App() {
   return (
-    <div className="relative bg-white font-sans overflow-hidden min-h-screen">
+    <div className="relative bg-white font-sans overflow-hidden">
 
       {/* ==== TOP BACKGROUND IMAGE ==== */}
       <img

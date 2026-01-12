@@ -13,22 +13,25 @@ import providus from "../assets/providus.png";
 import covenant from "../assets/covenant.png";
 import npf from "../assets/npf.png";
 import firs from "../assets/firs.png";
+import arm from "../assets/arm.png";
 
 const LogoScroll = () => {
   const logos = [
     { src: access, alt: "Access Bank" },
     { src: bankly, alt: "Bankly" },
-    { src: firstbank, alt: "FirstBank" },
-    { src: itex, alt: "Itex" },
+    { src: arm, alt: "ARM" },
     { src: stanbic, alt: "Stanbic Bank" },
+    { src: covenant, alt: "Covenant MFB" },
     { src: wema, alt: "Wema Bank" },
     { src: trustbanck, alt: "TrustBanc" },
-    { src: remita, alt: "Remita" },
-    { src: providus, alt: "Providus" },
-    { src: covenant, alt: "Covenant MFB" },
-    { src: npf, alt: "NPF MFB" },
-    { src: firs, alt: "FIRS MFB" },
     { src: uba, alt: "UBA" },
+
+    // { src: firstbank, alt: "FirstBank" },
+    // { src: itex, alt: "Itex" },
+    // { src: remita, alt: "Remita" },
+    // { src: providus, alt: "Providus" },
+    // { src: npf, alt: "NPF MFB" },
+    // { src: firs, alt: "FIRS MFB" },
   ];
 
   return (

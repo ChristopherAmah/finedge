@@ -3,48 +3,52 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import arm from '../assets/arm.png';
 import whyfinedge from '../assets/whyfinedge.png';
 
-
 const Hero = () => {
   return (
     <section className="relative overflow-hidden px-4 sm:px-6 lg:px-28 py-16 font-sans">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         
         {/* Left Content Column */}
-        <div className="flex-1 z-10">
-          <h1 className="text-5xl sm:text-5xl md:text-[56px] font-semibold text-[#121212] mb-4">
+        <div className="flex-1 z-10 text-center lg:text-left">
+          <h1 className="text-4xl sm:text-5xl md:text-[56px] font-semibold text-[#121212] mb-4 leading-tight">
             Scale Your Banking <br /> Operations with <br /> Confidence
           </h1>
 
-          <p className="text-lg sm:text-[20px] text-[#7C7C7C] mb-8 max-w-xl">
+          <p className="text-lg sm:text-[20px] text-[#7C7C7C] mb-8 max-w-xl mx-auto lg:mx-0">
             A cloud-native banking platform for growth, reliability, and innovation. 
             Empowering financial institutions to revolutionize operations and deliver 
             digital experiences.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-2 mb-8">
-            <button className="bg-[#3B348E] text-md text-white px-5 py-2.5 rounded-full font-medium hover:bg-[#2d276e] transition-colors">
-              Request a Demo
-            </button>
-            <button className="bg-[#EEEEEE] text-md text-[#121212] px-5 py-2.5 rounded-full font-medium flex items-center gap-2 hover:bg-gray-200 transition-colors">
-              Contact Sales <span><MdOutlineArrowOutward /></span>
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-3 mb-12 w-full">
+            <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
+              <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
+                                px-4 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base w-full sm:w-auto">
+                Request a Demo
+              </button>
+            </a>
+
+            <button className="flex items-center bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition
+                              px-4 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base w-full sm:w-auto justify-center">
+              Get Started
+              <MdOutlineArrowOutward size={16} className="ml-2" />
             </button>
           </div>
 
           {/* Trust Badge */}
-          <div className="flex items-center gap-2 text-[#7C7C7C] text-sm">
-             <div className="flex -space-x-2">
-                {/* Placeholder for small partner logos */}
-                <img src={arm} alt="" className='w-12'/>
-             </div>
-             <span>Trusted by 20+ Finance Institutions.</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-[#7C7C7C] text-sm mt-6">
+            <div className="flex -space-x-2">
+              <img src={arm} alt="Partner Logo" className="w-12" />
+            </div>
+            <span>Trusted by 20+ Finance Institutions.</span>
           </div>
         </div>
 
         {/* Right Image/Graphic Column */}
-        <div className="flex-1 relative w-full flex justify-center items-center">
-          <div className="w-full aspect-4/3 flex items-center justify-center">
-            <img src={whyfinedge} alt="Banking Dashboard" className="w-full h-auto" />
+        <div className="flex-1 relative w-full flex justify-center items-center mt-10 lg:mt-0">
+          <div className="w-full max-w-md sm:max-w-lg md:max-w-xl flex items-center justify-center">
+            <img src={whyfinedge} alt="Banking Dashboard" className="w-full h-auto rounded-lg" />
           </div>
         </div>
 
