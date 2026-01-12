@@ -1,8 +1,8 @@
 import React from "react";
-import loans from "../assets/loan.jpg";
-import onboarding from "../assets/onboarding.jpg";
-import customer from "../assets/customer.jpg";
-import payment from "../assets/payment.jpg";
+import loans from "../assets/launch1.jpg";
+import onboarding from "../assets/launch2.jpg";
+import customer from "../assets/launch3.jpg";
+import payment from "../assets/launch4.jpg";
 
 const features = [
   {

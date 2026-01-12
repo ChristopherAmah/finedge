@@ -1,6 +1,6 @@
 import React from 'react';
 import { Leaf, RefreshCcw, LayoutGrid, Calculator, ArrowUpRight } from 'lucide-react';
-import chall from '../assets/challenges.jpg';
+import chall from '../assets/core.jpg';
 import { FaLeaf } from "react-icons/fa";
 import { PiFanFill } from "react-icons/pi";
 import { RiGlasses2Fill } from "react-icons/ri";
@@ -37,11 +37,10 @@ const BankChallenges = () => {
       {/* Header Section */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-medium mb-3 mx-auto max-w-xl">
-          Challenges Faced by Retail Banks Today
+          Core Use Cases for Microfinance
         </h2>
         <p className="text-[#5E5E5E] max-w-lg mx-auto text-[18px]">
-          Modern retail banking demands require modern infrastructure. Are these
-          challenges holding you back?
+          Everything you need to run and grow your microfinance institution
         </p>
       </div>
 

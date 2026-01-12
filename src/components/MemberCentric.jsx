@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import chall from '../assets/challenges.jpg';
+import chall from '../assets/member.jpg';
 import { FaLeaf } from "react-icons/fa";
 import { PiFanFill } from "react-icons/pi";
 import { RiGlasses2Fill } from "react-icons/ri";

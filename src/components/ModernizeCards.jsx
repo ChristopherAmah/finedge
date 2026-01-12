@@ -1,9 +1,9 @@
 import React from "react";
-import loans from "../assets/loan.jpg";
-import onboarding from "../assets/onboarding.jpg";
-import customer from "../assets/customer.jpg";
-import payment from "../assets/payment.jpg";
-import digital from "../assets/digital.jpg";
+import loans from "../assets/modernize1.jpg";
+import onboarding from "../assets/modernize2.jpg";
+import customer from "../assets/modernize3.jpg";
+import payment from "../assets/modernize4.jpg";
+import digital from "../assets/modernize5.jpg";
 
 const features = [
   {

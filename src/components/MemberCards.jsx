@@ -1,7 +1,7 @@
 import React from "react";
-import simpleImg from "../assets/loan.jpg"; // Replace with your actual image paths
-import automatedImg from "../assets/onboarding.jpg";
-import auditImg from "../assets/customer.jpg";
+import simpleImg from "../assets/member1.jpg"; // Replace with your actual image paths
+import automatedImg from "../assets/member2.jpg";
+import auditImg from "../assets/member3.jpg";
 
 const features = [
   {
