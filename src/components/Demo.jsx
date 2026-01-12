@@ -29,7 +29,7 @@ const FinedgeHero = () => {
             Create an account and get started using Finedge, with full access to all features.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-row gap-4 justify-center lg:justify-start">
             <a href="mailto:info@thefifthlab.com">
               <button className="
                 px-5 py-2.5

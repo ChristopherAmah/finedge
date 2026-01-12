@@ -32,20 +32,23 @@ const Hero = () => {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-row flex-wrap justify-center gap-2 mb-12">
-        <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
-          <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
-                            w-full sm:w-auto
-                            py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
-            Request a Demo
-          </button>
-        </a>
-        <button className="flex bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition justify-center items-center
-                          w-full sm:w-auto
-                          py-2 px-4 text-sm sm:py-2.5 sm:px-5 sm:text-md">
-          Get Started <MdArrowOutward size={16} className="ml-2 mt-0.5 sm:ml-2 sm:mt-1" />
-        </button>
-      </div>
+<div className="flex justify-center items-center gap-3 mb-12">
+  <a href="mailto:info@thefifthlab.com">
+    <button className="bg-[#3A358C] hover:bg-indigo-700 text-white font-medium rounded-full transition
+                      px-4 py-2 text-sm
+                      sm:px-5 sm:py-2.5 sm:text-base">
+      Request a Demo
+    </button>
+  </a>
+
+  <button className="flex items-center bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition
+                    px-4 py-2 text-sm
+                    sm:px-5 sm:py-2.5 sm:text-base">
+    Get Started
+    <MdArrowOutward size={16} className="ml-2" />
+  </button>
+</div>
+
 
       {/* Trusted (Logo section) */}
       {/* <div className="flex flex-row justify-center items-center space-x-2 sm:space-x-2 text-sm text-[#7C7C7C] mb-6">
@@ -54,23 +57,16 @@ const Hero = () => {
       </div> */}
 
       {/* IMAGES SECTION */}
-      <div className="relative w-full flex justify-center pb-0 mt-6 px-4">
-        {/* === PHONE (hidden on mobile) === */}
-        {/* <img
-          src={herophone}
-          alt="Phone"
-          className="hidden md:block absolute z-0 -rotate-24 drop-shadow-2xl rounded-xl top-[-100px] left-[12%] w-[360px] lg:-top-[120px] lg:left-[10%] lg:w-[360px]"
-        /> */}
+<div className="relative w-full flex justify-center mt-6 px-2 sm:px-4">
+  <div className="w-full max-w-5xl aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7]">
+    <img
+      src={heropc}
+      alt="PC Mockup"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
 
-        {/* === PC === */}
-        <div className="relative w-full flex justify-center overflow-hidden h-[300px] sm:h-[350px] md:h-[300px] lg:h-[300px] z-10 ">
-          <img
-            src={heropc}
-            alt="PC Mockup"
-            className="w-full object-cover max-w-full"
-          />
-        </div>
-      </div>
     </section>
   );
 };
