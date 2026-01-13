@@ -5,6 +5,7 @@ import { FaLeaf } from "react-icons/fa";
 import { PiFanFill } from "react-icons/pi";
 import { RiGlasses2Fill } from "react-icons/ri";
 import { IoAlertCircle } from "react-icons/io5";
+import { IoPieChartSharp } from "react-icons/io5";
 
 const BankChallenges = () => {
   const challenges = [
@@ -21,7 +22,7 @@ const BankChallenges = () => {
     {
       title: "Agent & USSD Banking",
       description: "Extend your reach with agent networks and USSD channels. Enable customers to transact without smartphones or internet access.",
-      icon: <IoAlertCircle  className="w-5 h-5" />,
+      icon: <IoPieChartSharp  className="w-5 h-5" />,
     },
     {
       title: "Customer Onboarding & KYC",

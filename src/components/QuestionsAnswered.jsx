@@ -45,7 +45,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4" id='faq'>
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}

@@ -5,6 +5,7 @@ import { FaLeaf } from "react-icons/fa";
 import { PiFanFill } from "react-icons/pi";
 import { RiGlasses2Fill } from "react-icons/ri";
 import { IoAlertCircle } from "react-icons/io5";
+import { IoPieChartSharp } from "react-icons/io5";
 
 const BankChallenges = () => {
   const challenges = [
@@ -21,7 +22,7 @@ const BankChallenges = () => {
     {
       title: "Fragmented Customer Experiences",
       description: "Disconnected channels create inconsistent experiences across mobile, web, and branch.",
-      icon: <IoAlertCircle  className="w-5 h-5" />,
+      icon: <IoPieChartSharp  className="w-5 h-5" />,
     },
     {
       title: "High Operational Costs",

@@ -42,7 +42,7 @@ const DocumentationPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-28">
+    <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-28" id='documentation'>
       {/* Header Section */}
       <div className="max-w-7xl mx-auto text-center mb-10">
         <h1 className="text-4xl font-medium text-[#000000]">Documentation</h1>

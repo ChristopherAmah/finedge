@@ -54,7 +54,7 @@ const SuccessStories = () => {
   ];
 
   return (
-    <section className="bg-white py-20 px-4 md:px-8 lg:px-28">
+    <section className="bg-white py-20 px-4 md:px-8 lg:px-28" id='case-study'>
       {/* Header */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-medium text-[#000000] mb-4">Customer Success Stories</h2>

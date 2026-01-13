@@ -16,25 +16,30 @@ const Hero = () => {
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
-        <a href="mailto:info@thefifthlab.com" className="w-full sm:w-auto">
+        <a href="#documentation" className="w-full sm:w-auto">
           <button className="border border-[#3A358C66] text-[#545454] rounded-full transition 
                             w-full sm:w-auto
-                            py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md">
+                            py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md
+                            cursor-pointer">
             Documentation
           </button>
         </a>
 
+        <a href="#case-study" className="w-full sm:w-auto">
         <button className="flex justify-center items-center border border-[#3A358C66] text-[#545454] rounded-full transition
                           w-full sm:w-auto
-                          py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md">
+                          py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md cursor-pointer">
           Case Studies
         </button>
+        </a>
 
+        <a href="#faq" className="w-full sm:w-auto">
         <button className="flex justify-center items-center border border-[#3A358C66] text-[#545454] rounded-full transition
                           w-full sm:w-auto
-                          py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md">
+                          py-2 sm:py-2.5 px-4 sm:px-5 text-sm sm:text-md cursor-pointer">
           Frequently Asked Questions (FAQs)
         </button>
+        </a>
       </div>
     </section>
   );
