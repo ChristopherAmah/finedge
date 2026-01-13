@@ -81,9 +81,11 @@ const DocumentationPage = () => {
             </div>
 
             {/* Button */}
+            <a href="mailto:info@thefifthlab.com">
             <button className="w-full bg-[#222222] text-white py-2 rounded-full text-xs font-medium hover:bg-black transition-colors">
               View Documentation
             </button>
+            </a>
           </div>
         ))}
       </div>
