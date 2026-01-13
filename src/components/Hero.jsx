@@ -58,7 +58,7 @@ const Hero = () => {
 
       {/* IMAGES SECTION */}
 <div className="relative w-full flex justify-center mt-6 px-2 sm:px-4">
-  <div className="w-full max-w-5xl aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7]">
+  <div className="w-full max-w-5xl aspect-16/6 sm:aspect-16/8 md:aspect-16/6">
     <img
       src={heropc}
       alt="PC Mockup"

@@ -43,7 +43,7 @@ const FeatureGrid = () => {
       <div className="grid grid-cols-1 md:grid-cols-6 gap-6 px-6 md:px-28 max-w-7xl mx-auto">
         
         {/* Card 1: SaaS Deployment (Spans 4 columns / ~66%) */}
-        <div className="md:col-span-4 flex flex-col rounded-[24px] overflow-hidden bg-[#F5F5F5]">
+        <div className="md:col-span-4 flex flex-col rounded-3xl overflow-hidden bg-[#F5F5F5]">
           <div className="h-64 sm:h-80 overflow-hidden">
             <img 
               src={features[0].img} 
@@ -58,7 +58,7 @@ const FeatureGrid = () => {
         </div>
 
         {/* Card 2: Rapid Implementation (Spans 2 columns / ~33%) */}
-        <div className="md:col-span-2 flex flex-col rounded-[24px] overflow-hidden bg-[#F5F5F5]">
+        <div className="md:col-span-2 flex flex-col rounded-3xl overflow-hidden bg-[#F5F5F5]">
           <div className="h-64 sm:h-80 overflow-hidden">
             <img 
               src={features[1].img} 
@@ -73,7 +73,7 @@ const FeatureGrid = () => {
         </div>
 
         {/* Card 3: Configurable Loan Models (Spans 3 columns / 50%) */}
-        <div className="md:col-span-3 flex flex-col rounded-[24px] overflow-hidden bg-[#F5F5F5]">
+        <div className="md:col-span-3 flex flex-col rounded-3xl overflow-hidden bg-[#F5F5F5]">
           <div className="h-64 sm:h-80 overflow-hidden">
             <img 
               src={features[2].img} 
@@ -88,7 +88,7 @@ const FeatureGrid = () => {
         </div>
 
         {/* Card 4: Scales with Growth (Spans 3 columns / 50%) */}
-        <div className="md:col-span-3 flex flex-col rounded-[24px] overflow-hidden bg-[#F5F5F5]">
+        <div className="md:col-span-3 flex flex-col rounded-3xl overflow-hidden bg-[#F5F5F5]">
           <div className="h-64 sm:h-80 overflow-hidden">
             <img 
               src={features[3].img} 

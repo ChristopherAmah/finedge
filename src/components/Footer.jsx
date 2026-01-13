@@ -1,5 +1,6 @@
 import React from 'react';
 import footerlogo from '../assets/footerlogo.png';
+import { Link } from 'react-router-dom';
 
 const FinEdgeFooter = () => {
   return (
@@ -26,11 +27,11 @@ const FinEdgeFooter = () => {
 
             {/* Product */}
             <div className="space-y-3">
-              <h4 className="font-medium text-white text-lg">Product</h4>
+              <h4 className="font-medium text-white text-lg">Quick Links</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-white transition">Features</a></li>
-                <li><a href="#" className="hover:text-white transition">Solutions</a></li>
-                <li><a href="#" className="hover:text-white transition">Updates</a></li>
+                <li><Link to="/product" className="hover:text-white transition">Product</Link></li>
+                <li><Link to="/why-finedge" className="hover:text-white transition">Why Finedge</Link></li>
+                <li><Link to="/resources&faqs" className="hover:text-white transition">Resources & Faqs</Link></li>
               </ul>
             </div>
 
@@ -39,8 +40,8 @@ const FinEdgeFooter = () => {
               <h4 className="font-medium text-white text-lg">Resources</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="#" className="hover:text-white transition">Docs</a></li>
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Changelog</a></li>
+                {/* <li><a href="#" className="hover:text-white transition">Blog</a></li> */}
+                {/* <li><a href="#" className="hover:text-white transition">Changelog</a></li> */}
                 <li><a href="#" className="hover:text-white transition">Support</a></li>
               </ul>
             </div>
@@ -49,9 +50,9 @@ const FinEdgeFooter = () => {
             <div className="space-y-3 col-span-2 sm:col-span-1">
               <h4 className="font-medium text-white text-lg">Social</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-white transition">Instagram</a></li>
-                <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
-                <li><a href="#" className="hover:text-white transition">X</a></li>
+                <li><a href="https://www.instagram.com/finedgeng?igsh=eXZweTQ2bWEzdWcx" className="hover:text-white transition">Instagram</a></li>
+                {/* <li><a href="#" className="hover:text-white transition">LinkedIn</a></li> */}
+                {/* <li><a href="#" className="hover:text-white transition">X</a></li> */}
               </ul>
             </div>
 

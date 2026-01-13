@@ -39,7 +39,7 @@ const FeatureGrid = () => {
         {features.map((feature, index) => (
           <div 
             key={index} 
-            className="flex flex-col rounded-[32px] overflow-hidden bg-[#F5F5F5]"
+            className="flex flex-col rounded-4xl overflow-hidden bg-[#F5F5F5]"
           >
             {/* Image Container */}
             <div className="h-64 overflow-hidden">
@@ -51,7 +51,7 @@ const FeatureGrid = () => {
             </div>
             
             {/* Text Content */}
-            <div className="p-10 flex-grow">
+            <div className="p-10 grow">
               <h3 className="text-[24px] font-semibold text-black mb-4">
                 {feature.title}
               </h3>

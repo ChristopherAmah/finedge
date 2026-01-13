@@ -18,9 +18,11 @@ const Navbar = () => {
     <header className="py-4 sm:py-6 lg:py-[30.5px] lg:pb-[51px]">
       <nav className="max-w-5xl mx-auto bg-[#F3F3F8] rounded-full px-5 sm:px-[31px] py-2.5 flex items-center justify-between relative border border-[#D8CDFF] shadow-sm">
         {/* Logo */}
+        <Link to='/'>
         <div className="flex items-center">
           <img src={logo} alt="FinEdge Logo" className="h-8 object-contain" />
         </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-6 text-[16px]">

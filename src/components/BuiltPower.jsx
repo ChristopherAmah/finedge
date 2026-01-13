@@ -66,7 +66,7 @@ const Features = () => {
 
       {/* Image */}
       <div className="relative w-full max-w-sm sm:max-w-xl mx-auto mb-12 sm:mb-20 transition-all duration-500">
-        <div className="rounded-2xl overflow-hidden aspect-[16/10] sm:aspect-video">
+        <div className="rounded-2xl overflow-hidden aspect-16/10 sm:aspect-video">
           <img
             src={features[activeIndex].image}
             alt={features[activeIndex].title}
