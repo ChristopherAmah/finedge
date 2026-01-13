@@ -58,7 +58,7 @@ const FeatureCard = ({
 
     {/* SIDE LAYOUT (Image Left, Text Right) */}
     {layout === "side" && (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Image */}
         <div className="rounded-[20px] overflow-hidden">
           <img
@@ -143,7 +143,7 @@ const ApiCard = ({ title, content, imageSrc, imageAlt, stat1, stat2 }) => (
 const BankingLayout = () => {
   return (
     <div className="px-6 md:px-12 lg:px-[207px] max-w-7xl mx-auto py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {/* TOP LEFT */}
         <FeatureCard
           title="Seamless Integration"

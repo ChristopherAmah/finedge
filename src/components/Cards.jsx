@@ -45,7 +45,7 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <div className="grid md:grid-cols-3 gap-6 px-6 md:px-28 max-w-7xl mx-auto mt-20">
+    <div className="grid md:grid-cols-3 gap-3 px-6 md:px-28 max-w-7xl mx-auto mt-20">
 
       {/* ---- ROW 1 ---- */}
       <div className="md:col-span-2 flex flex-col h-full">
