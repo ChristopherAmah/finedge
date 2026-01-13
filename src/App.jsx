@@ -16,6 +16,7 @@ import Launch from './pages/Launch.jsx'
 import CookiePolicy from './pages/CookiePolicy.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import ScrollToTop from './ScrollToTop.jsx'
+import CookiePopup from './components/CookiePopup.jsx'
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
       </Routes>
       <Demo />
       <Footer />
+
+      <CookiePopup />
     </>
   )
 }

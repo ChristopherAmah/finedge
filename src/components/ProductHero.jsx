@@ -39,12 +39,14 @@ const Hero = () => {
     </button>
   </a>
 
-  <button className="flex items-center bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition
+  <a href="mailto:info@thefifthlab.com">
+    <button className="flex items-center bg-[#EEEEEE] hover:bg-gray-100 text-[#222222] font-medium rounded-full transition
                     px-4 py-2 text-sm
                     sm:px-5 sm:py-2.5 sm:text-base">
     Get Started
     <MdArrowOutward size={16} className="ml-2" />
   </button>
+  </a>
 </div>
 
     </section>

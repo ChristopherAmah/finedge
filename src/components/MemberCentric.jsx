@@ -63,9 +63,12 @@ const MemberCapabilities = () => {
 
           {/* CTA Button */}
           <div className="pt-2 sm:pt-4 col-span-full flex justify-start sm:justify-start">
+            <a href="mailto:info@thefifthlab.com">
+
             <button className="bg-[#3F3D8F] text-white px-4 sm:px-5 py-2.5 sm:py-2.5 text-sm sm:text-md rounded-full font-medium flex items-center gap-2 hover:bg-[#333175] transition-colors">
               Contact Sales <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
+            </a>
           </div>
         </div>
 

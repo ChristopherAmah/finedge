@@ -13,9 +13,11 @@ const FeatureSection = ({ title, description, features, bgColor, buttonColor }) 
         {description}
       </p>
 
+      <a href="mailto:info@thefifthlab.com">
       <button className={`${buttonColor} text-white text-[14px] sm:text-[16px] lg:text-[20px] font-medium py-2.5 px-5 rounded-full transition duration-300`}>
         Request a Demo
       </button>
+      </a>
     </div>
 
     <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-3">

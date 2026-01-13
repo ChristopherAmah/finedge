@@ -115,9 +115,12 @@ const FAQSection = () => {
             <h4 className="text-[18px] font-medium text-[#000000] mb-2">Still have a question in mind?</h4>
             <p className="text-[#5E5E5E] text-sm">Contact us if you have any other questions.</p>
           </div>
+          <a href="mailto:info@thefifthlab.com">
+
           <button className="mt-8 md:mt-0 text-xs bg-[#3A358C] text-white px-4 py-2 rounded-full font-medium hover:bg-[#312E81] transition-all active:scale-95">
             Contact us
           </button>
+          </a>
         </div>
 
       </div>

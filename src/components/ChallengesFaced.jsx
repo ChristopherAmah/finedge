@@ -65,9 +65,12 @@ const BankChallenges = () => {
 
           {/* CTA Button */}
           <div className="sm:col-span-2 mt-2 sm:mt-4">
+            <a href="mailto:info@thefifthlab.com">
+
             <button className="bg-[#3A358C] text-[#FFFFFF] px-4 sm:px-5 py-2.5 text-sm sm:text-md rounded-full font-medium flex items-center gap-2 hover:bg-[#333175] transition-colors">
               Contact Sales <ArrowUpRight className="w-4 h-4" />
             </button>
+            </a>
           </div>
         </div>
 
