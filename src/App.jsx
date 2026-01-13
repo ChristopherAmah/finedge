@@ -13,14 +13,18 @@ import Modernize from './pages/Modernize.jsx'
 import Grow from './pages/Grow.jsx'
 import Member from './pages/Member.jsx'
 import Launch from './pages/Launch.jsx'
+import CookiePolicy from './pages/CookiePolicy.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import ScrollToTop from './ScrollToTop.jsx'
 
 function App() {
   return (
     <>
       <TopBar />
+         <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Product />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/resources&faqs" element={<Resources />} />
         <Route path="/why-finedge" element={<WhyFinedge />} />
         <Route path="/demo" element={<Request />} />
@@ -28,6 +32,8 @@ function App() {
         <Route path="/solutions/grow" element={<Grow />} />
         <Route path="/solutions/member" element={<Member />} />
         <Route path="/solutions/launch" element={<Launch />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Demo />
       <Footer />

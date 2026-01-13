@@ -39,10 +39,10 @@ const FinEdgeFooter = () => {
             <div className="space-y-3">
               <h4 className="font-medium text-white text-lg">Resources</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-white transition">Docs</a></li>
+                <li><Link to="/resources&faqs" className="hover:text-white transition">Docs</Link></li>
                 {/* <li><a href="#" className="hover:text-white transition">Blog</a></li> */}
                 {/* <li><a href="#" className="hover:text-white transition">Changelog</a></li> */}
-                <li><a href="#" className="hover:text-white transition">Support</a></li>
+                <li><a href="mailto:info@thefifthlab.com" className="hover:text-white transition">Support</a></li>
               </ul>
             </div>
 
@@ -62,11 +62,11 @@ const FinEdgeFooter = () => {
         {/* Bottom */}
         <div className="border-t border-[#2A2A2A] pt-6">
           <div className="flex flex-row items-center gap-3 text-xs text-[#7C7C7C] justify-center text-center">
-            <span>© 2025 Finedge</span>
+            <span>© {new Date().getFullYear()} Finedge</span>
             <span className="inline">•</span>
-            <a href="#" className="hover:text-white">Terms</a>
+            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
             <span className="inline">•</span>
-            <a href="#" className="hover:text-white">Privacy</a>
+            <Link to="/cookie-policy" className="hover:text-white">Cookie Policy</Link>
           </div>
         </div>
 
