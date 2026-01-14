@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home.jsx'
 import TopBar from './components/TopBar.jsx'
@@ -35,6 +35,9 @@ function App() {
         <Route path="/solutions/launch" element={<Launch />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Demo />
       <Footer />
