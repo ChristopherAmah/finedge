@@ -1,28 +1,53 @@
-import { useState } from 'react'
-import { Route, Routes, Navigate } from 'react-router-dom'
-import './App.css'
-import Home from './pages/Home.jsx'
-import TopBar from './components/TopBar.jsx'
-import Footer from './components/Footer.jsx'
-import Demo from './components/Demo.jsx'
-import Product from './pages/Product.jsx'
-import Request from './pages/Request.jsx'
-import WhyFinedge from './pages/WhyFinedge.jsx'
-import Resources from './pages/Resources.jsx'
-import Modernize from './pages/Modernize.jsx'
-import Grow from './pages/Grow.jsx'
-import Member from './pages/Member.jsx'
-import Launch from './pages/Launch.jsx'
-import CookiePolicy from './pages/CookiePolicy.jsx'
-import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
-import ScrollToTop from './ScrollToTop.jsx'
-import CookiePopup from './components/CookiePopup.jsx'
+import { useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import "./App.css";
+
+import Home from "./pages/Home.jsx";
+import TopBar from "./components/TopBar.jsx";
+import Footer from "./components/Footer.jsx";
+import Demo from "./components/Demo.jsx";
+import Product from "./pages/Product.jsx";
+import Request from "./pages/Request.jsx";
+import WhyFinedge from "./pages/WhyFinedge.jsx";
+import Resources from "./pages/Resources.jsx";
+import Modernize from "./pages/Modernize.jsx";
+import Grow from "./pages/Grow.jsx";
+import Member from "./pages/Member.jsx";
+import Launch from "./pages/Launch.jsx";
+import CookiePolicy from "./pages/CookiePolicy.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
+import GoogleAnalyticsTracker from "./GoogleAnalyticsTracker.jsx";
+import CookiePopup from "./components/CookiePopup.jsx";
 
 function App() {
+
+  // ✅ Google tag (gtag.js)
+  useEffect(() => {
+    // Load the gtag script
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=G-QW0BMQE9C8";
+    document.head.appendChild(script);
+
+    // Exact Google snippet logic
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+
+    gtag("js", new Date());
+    gtag("config", "G-QW0BMQE9C8");
+  }, []);
+
   return (
     <>
       <TopBar />
-         <ScrollToTop />
+      <ScrollToTop />
+      <GoogleAnalyticsTracker />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
@@ -36,15 +61,14 @@ function App() {
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+
       <Demo />
       <Footer />
-
       <CookiePopup />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
